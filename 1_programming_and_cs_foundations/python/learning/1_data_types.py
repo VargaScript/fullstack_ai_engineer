@@ -1,0 +1,15 @@
+str = str()                # "Hello World"
+int = int()                # 20
+float = float()            # 20.0
+complex = complex()        # 20j
+list = list()              # ["Adair", "Vargas"]
+tuple = tuple()            # ("Adair", "Vargas")
+range = range()            # range(0, 28)
+dict = dict()              # {"name":"Adair", "last_name": "Vargas"}
+set = set()                # {1, 2, 3, "Adair", "Vargas", True, None}
+frozenset = frozenset()    # ({1, 2, 3, "Adair", "Vargas", True, None})
+bool = bool()              # True/False
+bytes = bytes()            # b'Hello'
+bytearray = bytearray()    # bytearray(b'\x00\x00\x00\x00\x00')
+memoryview = memoryview()  # <memory at 0x00B08FA0>
+NoneType = None            # None
