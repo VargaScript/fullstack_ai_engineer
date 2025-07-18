@@ -53,3 +53,30 @@ print(values)
 
 for key, value in student.items():
     print(key, " ", value)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# Exercises
+
+#1. Create a dictionary with 3 key-value pairs.
+
+#2. Access a value safely using .get() without raising an error.
+
+#3. Iterate through keys and values.
+
+#4. Invert a dictionary (swap keys and values).
+
+#5. Merge two dictionaries.
+
+#6. Count frequency of each character in a string and store in a dict.
+
+#7. Group words by their first letter into a dictionary.
+
+#8. Create a nested dictionary to represent student grades per subject.

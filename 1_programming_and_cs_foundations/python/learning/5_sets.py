@@ -32,3 +32,29 @@ print(set_c)
 #.symmetric_difference_update(): Inserts the symmetric differences from this set and another.
 union = set_b.union(set_c)                           # {"banana", "kiwi", "orange"}
 update = set_b.update(set_c)                         # {"banana", "kiwi", "orange"} (This is the new content of set b)
+
+
+
+
+
+
+
+
+
+#Exercises
+
+#1. Remove duplicates from a list using a set.
+
+#2. Check if two sets have common elements.
+
+#3. Add a new item to a set.
+
+#4. Find the symmetric difference between two sets.
+
+#5. Check if a set is a subset or superset of another.
+
+#6. Remove an element from a set only if it exists.
+
+#7. Given a list of words, return all unique characters across all words.
+
+#8. Implement a function that returns the difference of multiple sets.
