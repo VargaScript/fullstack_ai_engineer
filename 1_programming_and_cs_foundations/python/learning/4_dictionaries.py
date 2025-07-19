@@ -65,12 +65,52 @@ for key, value in student.items():
     
 # Exercises
 
+keys = ["age", "name", "height"]
+values = ["21", "Adair", "1.78"]
+user = {
+    "username": "johndoe",
+    "email": "john@example.com"
+}
+book = {
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949
+}
+countries = {
+    "USA": "Washington",
+    "France": "Paris",
+    "Japan": "Tokyo"
+}
+dict_a = {"a": 1, "b": 2}
+dict_b = {"c": 3, "d": 4}
+text = "data science"
+words = ["apple", "banana", "cherry", "avocado", "blueberry", "carrot"]
+grades = {
+    "Alice": {"Math": 90, "English": 85},
+    "Bob": {"Math": 75, "English": 95},
+    "Charlie": {"Math": 88, "English": 79}
+}
+
 #1. Create a dictionary with 3 key-value pairs.
+def create_dict(keys, values):
+    return dict(zip(keys, values))
+
+print(create_dict(keys, values))
 
 #2. Access a value safely using .get() without raising an error.
+def access_value(dictionary, value):
+    return dictionary.get(value)
+
+print(access_value(user, "email"))
 
 #3. Iterate through keys and values.
+def iterate_through_items(dictionary):
+    
+    for item in dictionary:
+        for key, value in dictionary.items():
+            print(f"Hola {key} {value}")
 
+iterate_through_items(book)
 #4. Invert a dictionary (swap keys and values).
 
 #5. Merge two dictionaries.

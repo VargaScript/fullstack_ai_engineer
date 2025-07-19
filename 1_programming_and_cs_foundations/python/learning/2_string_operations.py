@@ -121,8 +121,6 @@ def replace_with_underscores(sentence):
 
 print(replace_with_underscores(sentence))
 
-import string
-
 def replace_with_underscores2(sentence):
     underscored_list = []
 
