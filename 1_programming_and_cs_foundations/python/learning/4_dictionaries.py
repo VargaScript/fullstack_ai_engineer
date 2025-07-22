@@ -103,7 +103,7 @@ def access_value(dictionary, value):
 
 print(access_value(user, "email"))
 
-#3. Iterate through keys and values.
+#3. Iterate through keys and values(TERMINAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR).
 def iterate_through_items(dictionary):
     
     for item in dictionary:
@@ -111,12 +111,48 @@ def iterate_through_items(dictionary):
             print(f"Hola {key} {value}")
 
 iterate_through_items(book)
-#4. Invert a dictionary (swap keys and values).
 
+#4. Invert a dictionary (swap keys and values).
+def swap_dict(dictionary):
+    swapped_dictionary = {}
+    
+    for key, value in dictionary.items():
+        swapped_dictionary[value] = key
+    return swapped_dictionary
+    
+print(swap_dict(countries))
+    
 #5. Merge two dictionaries.
+def merge_dicts(dict1, dict2):
+    merged_dict = {}
+    dict1 = list(dict1.items())
+    dict2 = list(dict2.items())
+    arr = dict1 + dict2
+    
+    for item in arr:
+        key = item[0]
+        value = item[1]
+        merged_dict[key] = value
+    return merged_dict
+
+print(merge_dicts(dict_a, dict_b))
 
 #6. Count frequency of each character in a string and store in a dict.
+def count_char(string):
+    char_count = {}
+    
+    for letter in string:
+        if letter not in char_count:
+            char_count[letter] = 1
+        else: 
+            char_count[letter] += 1
+    
+    return char_count
+    
+print(count_char(text))
 
 #7. Group words by their first letter into a dictionary.
+def group_words():
+    pass
 
 #8. Create a nested dictionary to represent student grades per subject.
