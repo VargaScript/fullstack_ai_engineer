@@ -85,11 +85,25 @@ dict_a = {"a": 1, "b": 2}
 dict_b = {"c": 3, "d": 4}
 text = "data science"
 words = ["apple", "banana", "cherry", "avocado", "blueberry", "carrot"]
-grades = {
-    "Alice": {"Math": 90, "English": 85},
-    "Bob": {"Math": 75, "English": 95},
-    "Charlie": {"Math": 88, "English": 79}
-}
+grades_data = [
+    ("Alice", "Math", 88),
+    ("Alice", "Science", 92),
+    ("Alice", "English", 85),
+    ("Bob", "Math", 76),
+    ("Bob", "Science", 81),
+    ("Bob", "English", 79),
+    ("Charlie", "Math", 93),
+    ("Charlie", "Science", 89),
+    ("Charlie", "English", 90),
+    ("Diana", "Math", 85),
+    ("Diana", "Science", 87),
+    ("Diana", "English", 82),
+    ("Ethan", "Math", 91),
+    ("Ethan", "Science", 90),
+    ("Ethan", "English", 88),
+]
+
+import collections
 
 #1. Create a dictionary with 3 key-value pairs.
 def create_dict(keys, values):
@@ -103,13 +117,11 @@ def access_value(dictionary, value):
 
 print(access_value(user, "email"))
 
-#3. Iterate through keys and values(TERMINAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR).
+#3. Iterate through keys and values.
 def iterate_through_items(dictionary):
     
-    for item in dictionary:
-        for key, value in dictionary.items():
-            print(f"Hola {key} {value}")
-
+    print(f"The book {dictionary["title"]} written by {dictionary["title"]} was written in {dictionary["year"]}")
+  
 iterate_through_items(book)
 
 #4. Invert a dictionary (swap keys and values).
@@ -152,7 +164,33 @@ def count_char(string):
 print(count_char(text))
 
 #7. Group words by their first letter into a dictionary.
-def group_words():
-    pass
+def group_words(words):
+    normalized_words = []
+    
+    for word in words:
+        normalized_word = word.lower()
+        normalized_words.append(normalized_word)
+    
+    words_by_first_letter = {}
+    for word in normalized_words:
+        if word[0] not in words_by_first_letter:
+            words_by_first_letter[word[0]] = [word]
+        else: 
+            words_by_first_letter[word[0]] += [word]
+    
+    return words_by_first_letter
+
+print(group_words(words))
 
 #8. Create a nested dictionary to represent student grades per subject.
+def nested_dict(grades):
+    student_dict = {}
+    
+    for student, subject, score in grades:
+        if student not in student_dict:
+            student_dict[student] = {}
+        student_dict[student][subject] = score
+        
+    return student_dict
+ 
+print(nested_dict(grades_data))

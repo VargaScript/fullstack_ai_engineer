@@ -1,5 +1,5 @@
 #Add *args and **kwargs, lambda functions, iterators, generators, list/dict comprehensions
-#regexp
+#regexp, recursion
 
 Write a function that returns the square of a number.
 
