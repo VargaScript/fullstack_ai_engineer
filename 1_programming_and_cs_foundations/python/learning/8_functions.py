@@ -1,4 +1,4 @@
-#Add *args and **kwargs, lambda functions, iterators, generators, list/dict comprehensions
+#Add *args and **kwargs, lambda functions, iterators, generators, list/dict/set comprehensions
 #regexp, recursion
 
 Write a function that returns the square of a number.
