@@ -43,6 +43,7 @@ update = set_b.update(set_c)                         # {"banana", "kiwi", "orang
 
 
 
+
 #Exercises
 
 numbers = [3, 5, 2, 3, 7, 2, 5, 9, 10, 3]
